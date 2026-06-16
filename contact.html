@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Request a Quote — RAD Motor Group</title>
+  <meta name="description" content="Get in touch with RAD Motor Group. Request a quote for restoration, modification, collision, mechanical, industrial or fleet work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/img/rad-logo.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="index.html" class="nav__brand" aria-label="RAD Motor Group home">
+      <img src="assets/img/rad-logo.png" alt="RAD Motor Group" onerror="this.style.display='none'" />
+      <span class="nav__brand-text"><strong>RAD</strong><span>Motor Group</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="designs.html">RAD Auto Designs</a>
+      <a href="fleet.html">Industrial &amp; Fleet</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="btn btn--primary nav__cta">Request a Quote</a>
+    </nav>
+    <button class="nav__toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <!-- PAGE HEAD -->
+  <section class="page-head">
+    <div class="page-head__bg"><img src="assets/img/sema-truck-show.jpg" alt="Custom build by RAD Motor Group" /></div>
+    <div class="wrap page-head__inner">
+      <nav class="breadcrumb reveal"><a href="index.html">Home</a> / Contact</nav>
+      <span class="eyebrow reveal" data-delay="1">Get In Touch</span>
+      <h1 class="reveal" data-delay="1">Request A Quote</h1>
+      <p class="lead reveal" data-delay="2">Tell us about your project or service needs and the RAD team will get back to you within one business day.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section">
+    <div class="wrap contact-grid">
+
+      <!-- FORM -->
+      <div class="reveal">
+        <form class="form" name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-form novalidate>
+          <input type="hidden" name="form-name" value="quote" />
+          <p class="hidden-field" aria-hidden="true"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+          <div class="form__row">
+            <div class="field">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Your full name" />
+            </div>
+            <div class="field">
+              <label for="company">Company (optional)</label>
+              <input type="text" id="company" name="company" placeholder="Business or fleet name" />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com" />
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(825) 779-3922" />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="division">Division *</label>
+              <select id="division" name="division" required>
+                <option value="" selected disabled>Select a division</option>
+                <option>RAD Auto Designs — Restoration &amp; Modification</option>
+                <option>RAD Industrial &amp; Fleet</option>
+                <option>Not sure / Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="" selected disabled>Select a service</option>
+                <option>Full Restoration</option>
+                <option>Custom Paint / Refinish</option>
+                <option>Engine Build / Modification</option>
+                <option>Interior / Bodywork</option>
+                <option>Collision Repair</option>
+                <option>Paintless Dent Removal</option>
+                <option>Mechanical Repair</option>
+                <option>Fleet Maintenance</option>
+                <option>Industrial Work</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="vehicle">Vehicle / Equipment</label>
+            <input type="text" id="vehicle" name="vehicle" placeholder="Year, make, model (e.g. 1970 Dodge Charger)" />
+          </div>
+
+          <div class="field">
+            <label for="message">Project Details *</label>
+            <textarea id="message" name="message" required placeholder="Tell us about the work you need, your goals, timeline and budget if you have one in mind."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Send Request <span class="arrow">→</span></button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+          <p class="form__note">* Required fields. By submitting, you agree to be contacted by RAD Motor Group about your request.</p>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="reveal" data-delay="1">
+        <span class="eyebrow">Contact Details</span>
+        <h2 style="margin:0.8rem 0 1.4rem; font-size:clamp(1.6rem,3vw,2.2rem)">Reach The Shop</h2>
+
+        <div class="info-item">
+          <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.4 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg></span>
+          <div><h4>Phone</h4><a href="tel:+18257793922">(825) 779-3922</a></div>
+        </div>
+        <div class="info-item">
+          <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg></span>
+          <div><h4>Email</h4><a href="mailto:connect@radmotorgroup.com">connect@radmotorgroup.com</a></div>
+        </div>
+        <div class="info-item">
+          <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><h4>Location</h4><p>Foothills County, Alberta</p></div>
+        </div>
+        <div class="info-item">
+          <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><h4>Hours</h4><p>Mon–Fri: 8:00 AM – 5:00 PM<br />Sat &amp; Sun: By appointment</p></div>
+        </div>
+
+        <div style="margin-top:1.8rem">
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3h-3a4 4 0 00-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/img/rad-logo.png" alt="RAD Motor Group" onerror="this.style.display='none'" />
+          <p>Restoration, modification, industrial, collision and fleet work — delivered with craftsmanship and grit by RAD Motor Group.</p>
+        </div>
+        <div><h4>Divisions</h4><ul><li><a href="designs.html">RAD Auto Designs</a></li><li><a href="fleet.html">Industrial &amp; Fleet</a></li></ul></div>
+        <div><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html">Request a Quote</a></li></ul></div>
+        <div><h4>Get In Touch</h4><ul><li><a href="tel:+18257793922">(825) 779-3922</a></li><li><a href="mailto:connect@radmotorgroup.com">connect@radmotorgroup.com</a></li><li>Foothills County, Alberta</li></ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span id="year">2026</span> RAD Motor Group. All rights reserved.</span>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3h-3a4 4 0 00-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
