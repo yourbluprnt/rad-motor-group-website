@@ -127,6 +127,7 @@ p  { color: var(--silver); }
 .btn .arrow { transition: transform var(--t-fast) var(--ease); }
 .btn:hover .arrow { transform: translateX(4px); }
 .btn--lg { padding: 1.2rem 2.8rem; font-size: 1.1rem; letter-spacing: 0.14em; border-radius: var(--radius); }
+.hero__actions .btn--lg { padding-top: 1.75rem; padding-bottom: 1.75rem; }
 @media (max-width: 620px) { .btn--lg { width: 100%; justify-content: center; } }
 
 /* ---------- Navigation ---------- */
