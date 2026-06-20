@@ -39,7 +39,7 @@
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* Quote / contact form — submits to Netlify Forms via AJAX */
+  /* Quote / contact form — submits to Web3Forms via AJAX */
   var form = document.querySelector("[data-form]");
   if (form) {
     form.addEventListener("submit", function (e) {
@@ -58,13 +58,13 @@
       if (btn) { btn.disabled = true; }
       if (status) { status.textContent = "Sending…"; status.style.color = ""; }
 
-      var body = new URLSearchParams(new FormData(form)).toString();
-      fetch("/", {
+      fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: body
+        body: new FormData(form)
       }).then(function (res) {
-        if (!res.ok) { throw new Error("Bad response"); }
+        return res.json();
+      }).then(function (data) {
+        if (!data.success) { throw new Error(data.message || "Submission failed"); }
         if (status) {
           status.textContent = "Thanks — your request has been received. The RAD team will be in touch within one business day.";
           status.style.color = "var(--rad-red-bright)";

@@ -47,9 +47,11 @@
 
       <!-- FORM -->
       <div class="reveal">
-        <form class="form" name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-form novalidate>
-          <input type="hidden" name="form-name" value="quote" />
-          <p class="hidden-field" aria-hidden="true"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+        <form class="form" data-form novalidate>
+          <input type="hidden" name="access_key" value="fe7f55b0-2c0e-4a04-b5c2-d6a4280c3523" />
+          <input type="hidden" name="subject" value="New Quote Request — RAD Motor Group Website" />
+          <input type="hidden" name="from_name" value="RAD Motor Group Website" />
+          <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <div class="form__row">
             <div class="field">
               <label for="name">Name *</label>
